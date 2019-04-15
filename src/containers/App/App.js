@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
+import { Route, withRouter, Link } from 'react-router-dom'
 import './App.css';
 import Form from '../../components/Form/Form';
 import { storeTranslation } from '../../actions';
@@ -49,7 +50,7 @@ export class App extends Component {
     return (
       <div className="App">
        <Form handleSubmit={this.handleFormSubmit}/>
-       <PhraseContainer />
+       <Route exact path='/' component= {PhraseContainer}/>
       </div>
     );
   }
@@ -59,4 +60,4 @@ export const mapDispatchToProps = (dispatch) => ({
   storeTranslation: (translations) => dispatch(storeTranslation(translations))
 })
 
-export default connect(null, mapDispatchToProps)(App);
+export default withRouter(connect(null, mapDispatchToProps)(App));
