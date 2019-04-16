@@ -19,8 +19,34 @@
   color: white;
 }
 
+.shown {
+  filter: brightness(70%);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+.header {
+  color: #FFF;
+  font-size: 72px;
+  font-weight: bolder;
+  height: 100px;
+  letter-spacing: 10px;
+  // background-color: plum;
+  margin: auto;
+  width: 65%;
+  border-bottom: 1px dotted #FFF;
+  &:hover {
+    color: grey;
+    transition: color .5s ease;
+  }
 }
 
 @keyframes App-logo-spin {

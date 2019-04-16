@@ -22,9 +22,10 @@ export default class Form extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <input value={this.state.text}
+        <textarea value={this.state.text}
                name="text"
                onChange={this.handleChange}
+               className="form"
         />
         <button>Translate</button>
       </form>

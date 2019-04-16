@@ -1,19 +1,20 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import Phrase from '../Phrase/Phrase'
 
 export class PhraseContainer extends Component {
   constructor() {
-    super()
+    super();
   }
 
   render() {
     console.log(this.props)
     return (
-      <div>
+      <div className="container">
         {this.props.phrases && 
           this.props.phrases.map(phrase => {
-            return <div>{phrase.translatedText}</div>
-          })  
+            return <Phrase {...phrase} />
+          })
         }
       </div>
     )
