@@ -26,13 +26,15 @@
     box-shadow: 3px 10px 6px rgb(19, 216, 216);
     filter: brightness(1.7);
     cursor: crosshair;
+    transition: filter 1s;
   }
 }
 
 .right {
   background: cadetblue;
   &:hover {
-    background: #FFF;
+    background-color: #FFF;
+    transition: background-color 1s;
   }
 }
 

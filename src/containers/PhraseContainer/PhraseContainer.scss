@@ -1,5 +1,4 @@
 .container {
-  border-top: 1px solid black;
   display: flex;
   height: 800px;
   flex-wrap: wrap;
@@ -22,7 +21,8 @@
   padding: 10px;
   text-decoration: none;
   &:hover {
-    color: grey;
+    // color: grey;
+    text-shadow: 1px 1px cyan;
   }
 }
 
