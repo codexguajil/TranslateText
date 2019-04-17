@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 export const Details = (props) => {
- const {id, translatedText, original} = props
+ const {translatedText, original} = props
   console.log(props)
     return (
         <div className="details-field">

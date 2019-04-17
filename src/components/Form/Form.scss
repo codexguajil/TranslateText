@@ -41,7 +41,7 @@ button {
   font-size: 20px;
   height: 40px;
   margin: auto;
-  margin-top: -37px;
+  margin-top: -5px;
   width: 1000px;
   &:hover {
     background: hsla(300,100%,30%, .1);
@@ -49,6 +49,8 @@ button {
     border-left: 1px solid black;
     color: #FFF;
     cursor: pointer;
+    font-weight: bolder;
+    letter-spacing: 1.3px;
     transition: background-color .5s ease;
   }
   &:focus {

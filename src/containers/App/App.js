@@ -4,7 +4,6 @@ import { Route, withRouter, Link } from 'react-router-dom'
 import Form from '../../components/Form/Form';
 import { storeTranslation } from '../../actions';
 import PhraseContainer from '../PhraseContainer/PhraseContainer';
-import {Phrase} from '../Phrase/Phrase';
 import key from '../../utils/apiKEY';
 import PropTypes from 'prop-types';
 import {Details} from '../../components/Details/Details';
