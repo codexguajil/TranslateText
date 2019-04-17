@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { Route, withRouter, Link } from 'react-router-dom'
+import { Route, withRouter } from 'react-router-dom'
 import Form from '../../components/Form/Form';
 import { storeTranslation } from '../../actions';
 import PhraseContainer from '../PhraseContainer/PhraseContainer';

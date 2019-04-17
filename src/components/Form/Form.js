@@ -56,7 +56,7 @@ export class Form extends Component {
                   className="input"
                   placeholder="Type your english text to translate here! Expand the text area for more space."
             />
-            <button>Translate</button>
+            <button className="translate-btn">Translate</button>
         </div>
       </form>
       </div>
