@@ -15,6 +15,16 @@ export class Form extends Component {
     })
   }
 
+  handleClick = () => {
+    console.log(this.props)
+    let { history, translations } = this.props
+    if(translations.length) {
+      history.push('/translations')
+    } else {
+      this.props.handleError('you don`t have any translations to see')
+    }
+  }
+
   handleSubmit = (e) => {
     let { history } = this.props
     e.preventDefault()
@@ -29,9 +39,11 @@ export class Form extends Component {
   render() {
     return (
       <div>
-          <Link to='/translations' className="nav-link">
-            See Translations.
-          </Link>
+          
+            <button onClick={this.handleClick} className="nav-link">
+              See Translations.
+            </button>
+          
           <Link to="/" className="header">
             Translate to French.
           </Link>

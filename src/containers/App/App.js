@@ -63,7 +63,7 @@ export class App extends Component {
     const {message} = this.props
     return (
       <div className="App">
-       <Route exact path='/' component={ () => <Form handleSubmit={this.handleFormSubmit} handleError={this.handleError} />} />
+       <Route exact path='/' component={ () => <Form handleSubmit={this.handleFormSubmit} handleError={this.handleError} translations={this.props.translations} />} />
        <p className='message'>{message}</p>
        <Route exact path='/translations' component={ () => <PhraseContainer loading={this.state.isLoading} /> } />
        <Route path='/translations/:id' render={this.findTranslation} />
