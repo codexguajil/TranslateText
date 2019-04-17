@@ -35,7 +35,8 @@
   "jest": {
     "collectCoverageFrom": [
       "src/containers/App/App.js",
-      "src/components/From/Form.js",
+      "src/components/Form/Form.js",
+      "src/components/Details/Details.js",
       "src/containers/Phrase/Phrase.js",
       "src/containers/PhraseContainer/PhraseContainer.js",
       "src/reducers/translations.js",

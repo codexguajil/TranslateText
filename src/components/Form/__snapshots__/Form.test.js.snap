@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Form />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        id="input-cont"
+      >
+        <textarea
+          className="input"
+          name="text"
+          onChange={[Function]}
+          placeholder="Type your english text to translate here! Expand the text area for more space."
+          value=""
+        />
+        <button>
+          Translate
+        </button>
+      </div>,
+      "className": "form",
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <textarea
+            className="input"
+            name="text"
+            onChange={[Function]}
+            placeholder="Type your english text to translate here! Expand the text area for more space."
+            value=""
+          />,
+          <button>
+            Translate
+          </button>,
+        ],
+        "id": "input-cont",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "input",
+            "name": "text",
+            "onChange": [Function],
+            "placeholder": "Type your english text to translate here! Expand the text area for more space.",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "textarea",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Translate",
+          },
+          "ref": null,
+          "rendered": "Translate",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          id="input-cont"
+        >
+          <textarea
+            className="input"
+            name="text"
+            onChange={[Function]}
+            placeholder="Type your english text to translate here! Expand the text area for more space."
+            value=""
+          />
+          <button>
+            Translate
+          </button>
+        </div>,
+        "className": "form",
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <textarea
+              className="input"
+              name="text"
+              onChange={[Function]}
+              placeholder="Type your english text to translate here! Expand the text area for more space."
+              value=""
+            />,
+            <button>
+              Translate
+            </button>,
+          ],
+          "id": "input-cont",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "input",
+              "name": "text",
+              "onChange": [Function],
+              "placeholder": "Type your english text to translate here! Expand the text area for more space.",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "textarea",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Translate",
+            },
+            "ref": null,
+            "rendered": "Translate",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
