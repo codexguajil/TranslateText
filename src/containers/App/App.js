@@ -7,13 +7,22 @@ import PhraseContainer from '../PhraseContainer/PhraseContainer';
 import key from '../../utils/apiKEY';
 import PropTypes from 'prop-types';
 import {Details} from '../../components/Details/Details';
+import {postMessage} from '../../actions';
 
 export class App extends Component {
   constructor() {
     super();
     this.state = {
-      isLoading: false
+      isLoading: false,
+      error: '',
     }
+  }
+
+  handleError = (message) => {
+    this.props.postMessage(message)
+    setTimeout(() => {
+      this.props.postMessage('')
+    }, 2000)
   }
 
   translateWords = async (content) => {
@@ -51,9 +60,11 @@ export class App extends Component {
   }
 
   render() {
+    const {message} = this.props
     return (
       <div className="App">
-       <Route exact path='/' component={ () => <Form handleSubmit={this.handleFormSubmit} />} />
+       <Route exact path='/' component={ () => <Form handleSubmit={this.handleFormSubmit} handleError={this.handleError} />} />
+       <p className='message'>{message}</p>
        <Route exact path='/translations' component={ () => <PhraseContainer loading={this.state.isLoading} /> } />
        <Route path='/translations/:id' render={this.findTranslation} />
       </div>
@@ -62,11 +73,13 @@ export class App extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  translations: state.translations
+  translations: state.translations,
+  message: state.message
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-  storeTranslation: (translations) => dispatch(storeTranslation(translations))
+  storeTranslation: (translations) => dispatch(storeTranslation(translations)),
+  postMessage: (message) => dispatch(postMessage(message))
 })
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

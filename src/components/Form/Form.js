@@ -21,6 +21,8 @@ export class Form extends Component {
     if(this.state.text) {
       this.props.handleSubmit(this.state.text)
       history.push('/translations')
+    } else {
+      this.props.handleError('type something to translate')
     }
   }
 
