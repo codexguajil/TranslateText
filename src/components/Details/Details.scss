@@ -1,5 +1,6 @@
 .details-field {
-  background: #FFF;
+  background: linear-gradient(rgb(179, 129, 179), #FFF);
+  border-radius: 10px;
   color: black;
   display: flex;
   flex-direction: row;
@@ -10,20 +11,38 @@
   width: 95%;
 }
 
-.left {
+.left, .right {
+  animation: 1.3s slide-up, 2s fade;
+  animation-fill-mode: forwards;
   background: plum;
+  box-shadow: 2px 5px 4px black;
   height: 500px;
   margin: auto;
   padding: 20px;
   overflow: scroll;
   width: 350px;
+  &:hover {
+    border: 1px solid black;
+    box-shadow: 3px 10px 6px rgb(19, 216, 216);
+    filter: brightness(1.7);
+    cursor: crosshair;
+  }
 }
 
 .right {
   background: cadetblue;
-  height: 500px;
-  margin: auto;
-  padding: 20px;
-  overflow: scroll;
-  width: 350px;
+  &:hover {
+    background: #FFF;
+  }
+}
+
+@keyframes slide-up {
+  from {margin-top: 300px;}
+  to {margin-top: 25px;}
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  50% {opacity: .5;}
+  100% {opacity: 1;}
 }
