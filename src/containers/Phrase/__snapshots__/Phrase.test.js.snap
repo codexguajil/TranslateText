@@ -31,7 +31,7 @@ ShallowWrapper {
           className="delete"
           onClick={[Function]}
         >
-          x
+          delete
         </button>,
       ],
     },
@@ -68,12 +68,12 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "x",
+          "children": "delete",
           "className": "delete",
           "onClick": [Function],
         },
         "ref": null,
-        "rendered": "x",
+        "rendered": "delete",
         "type": "button",
       },
     ],
@@ -98,7 +98,7 @@ ShallowWrapper {
             className="delete"
             onClick={[Function]}
           >
-            x
+            delete
           </button>,
         ],
       },
@@ -135,12 +135,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "x",
+            "children": "delete",
             "className": "delete",
             "onClick": [Function],
           },
           "ref": null,
-          "rendered": "x",
+          "rendered": "delete",
           "type": "button",
         },
       ],
