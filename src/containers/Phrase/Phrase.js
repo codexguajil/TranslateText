@@ -1,38 +1,18 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 
-export class Phrase extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+export const Phrase = (props) => {
+ const {id, translatedText} = props
 
-    }
-  }
-
-  addFave = () => {
-    
-  }
-
-  deletePhrase = () => {
-
-  }
-
-  render() {
     return (
-      <div onClick={this.addFave}
-           className='text-box'
-      >{this.props.translatedText}
-      </div>
+      <Link to={`/translations/${id}`} className="text-link">
+        <div className="text-box">
+        {translatedText}
+        </div>
+      </Link>
     )
-  }
+  
 }
 
-const mapStateToProps = (state) => ({
-  translations: state.translations
-})
-
-const mapDispatchToProps = (dispatch) => ({
-
-})
-
-export default connect(mapStateToProps)(Phrase)
+export default Phrase

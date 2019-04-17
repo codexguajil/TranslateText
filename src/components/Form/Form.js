@@ -23,13 +23,16 @@ export default class Form extends Component {
     return (
       <form onSubmit={this.handleSubmit}
             className="form">
-        <textarea value={this.state.text}
-               name="text"
-               onChange={this.handleChange}
-               className="input"
-               placeholder="Input your text to translate here. You can drag the text area if you need more space!"
-        />
-        <button>Translate</button>
+        <div id="input-cont">
+          <textarea value={this.state.text}
+                  name="text"
+                  onChange={this.handleChange}
+                  className="input"
+                  placeholder="Input your text to translate here. You can drag the text area if you need more space!"
+            />
+          <button>Translate</button>
+
+        </div>
       </form>
     )
   }

@@ -1,20 +1,27 @@
 .text-box {
   background: #FFF;
   border: 1px dotted #FFF;
+  border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.20);
   color: black;
   font-size: 26px;
-  height: 80px;
+  height: 180px;
+  letter-spacing: 1px;
   margin: 30px;
   opacity: 0.9;
   padding: 8px;
   text-align: left;
   font-weight: 300;
-  width: 29%;
+  overflow: scroll;
+  width: 450px;
   &:hover {
-    background: #ffefc1;
+    background: hsla(90,100%,50%, .1);
     cursor: pointer;
-    font-weight: normal;
+    opacity: 1;
     transition: background-color .5s ease;
   }
+}
+
+.text-link {
+  text-decoration: none;
 }

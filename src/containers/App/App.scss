@@ -20,7 +20,7 @@
 }
 
 .shown {
-  filter: brightness(50%);
+  filter: brightness(70%);
   position: fixed;
   right: 0;
   bottom: 0;
@@ -34,18 +34,18 @@
 }
 
 .header {
-  color: #FFF;
-  font-size: 72px;
+  background: #FFF;
+  color: black;
+  display: block;
+  font-size: 36px;
   font-weight: 300;
-  height: 82px;
-  // line-height: 1.7;
+  height: 70px;
   letter-spacing: 10px;
-  margin: auto;
-  width: 65%;
-  border-bottom: 1px dotted #FFF;
+  width: 100%;
   &:hover {
+    text-decoration-color: black;
+    color: hsla(340,80%,45%, .5);
     cursor: pointer;
-    transition: color .5s ease;
   }
 }
 
