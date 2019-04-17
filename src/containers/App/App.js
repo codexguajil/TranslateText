@@ -11,9 +11,6 @@ import {Details} from '../../components/Details/Details';
 export class App extends Component {
   constructor() {
     super();
-    this.state = {
-      translations: [],
-    }
   }
 
   translateWords = async (content) => {
@@ -54,11 +51,9 @@ export class App extends Component {
         <Link to="/" className="header">
           Translate to French.
         </Link>
-        <video autoPlay muted loop className="shown">
-          <source src="https://previews.customer.envatousercontent.com/h264-video-previews/de1c5be5-54d3-49f3-92d2-d3cc647950c4/9537502.mp4" type="video/mp4" />
-        </video>
-       <Form handleSubmit={this.handleFormSubmit}/>
-       <Route exact path='/' component={PhraseContainer}/>
+       {/* <Form handleSubmit={this.handleFormSubmit}/> */}
+       <Route exact path='/' component={ () => <Form handleSubmit={this.handleFormSubmit} />} />
+       <Route exact path='/translations' component={PhraseContainer} />
        <Route path='/translations/:id' render={this.findTranslation} />
       </div>
     );

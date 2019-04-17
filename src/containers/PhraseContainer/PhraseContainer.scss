@@ -1,5 +1,6 @@
 .container {
-  background: hsla(360, 360, 360, 1);
+  background: hsla(360, 360, 360, .3);
+  background: black;
   display: flex;
   flex-wrap: wrap;
   height: 700px;
@@ -10,7 +11,7 @@
 
 #heading {
   border-bottom: 1px dotted #FFF;
-  color: #FFF;
+  color: black;
   font-weight: 300;
   margin-left: 10px;
   margin-bottom: 15px;

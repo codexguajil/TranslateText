@@ -11,9 +11,10 @@ export class PhraseContainer extends Component {
   }
 
   render() {
+    console.log(this.props)
     return (
       <div>
-      <h1 id="heading">Your Past Translations</h1>
+      <h1 id="heading">Your Current Translations</h1>
       <div className="container">
         {this.props.phrases && 
           this.props.phrases.map(phrase => <Phrase {...phrase} deleteTrans={this.deleteTrans}/>)

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 
 export const Details = (props) => {
  const {translatedText, original} = props
-  console.log(props)
     return (
         <div className="details-field">
           <section className="left">
@@ -20,5 +19,6 @@ export default Details
 
 Details.propTypes = {
   id: PropTypes.string,
-  translatedText: PropTypes.string
+  translatedText: PropTypes.string,
+  original: PropTypes.string
 }

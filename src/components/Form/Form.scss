@@ -2,6 +2,7 @@
   background: #FFF;
   display: inline-flex;
   flex-direction: column;
+  // margin-top: 300px;
   padding-top: 26px;
   padding-bottom: 26px;
   width: 100%;
@@ -37,6 +38,7 @@
 button {
   background: #FFF;
   border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   color: black;
   font-size: 20px;
   height: 40px;
@@ -51,6 +53,7 @@ button {
     cursor: pointer;
     font-weight: bolder;
     letter-spacing: 1.3px;
+    text-shadow: 1px 1px lavender;
     transition: background-color .5s ease;
   }
   &:focus {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { Link, withRouter } from 'react-router-dom'
 
-export default class Form extends Component {
+export class Form extends Component {
   constructor() {
     super();
     this.state = {
@@ -15,9 +16,11 @@ export default class Form extends Component {
   }
 
   handleSubmit = (e) => {
+    let { history } = this.props
     e.preventDefault()
     if(this.state.text) {
       this.props.handleSubmit(this.state.text)
+      history.push('/translations')
     }
   }
 
@@ -32,9 +35,11 @@ export default class Form extends Component {
                   className="input"
                   placeholder="Type your english text to translate here! Expand the text area for more space."
             />
-          <button>Translate</button>
+            <button>Translate</button>
         </div>
       </form>
     )
   }
 }
+
+export default withRouter(Form)
