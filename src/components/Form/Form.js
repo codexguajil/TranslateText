@@ -21,11 +21,13 @@ export default class Form extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit}
+            className="form">
         <textarea value={this.state.text}
                name="text"
                onChange={this.handleChange}
-               className="form"
+               className="input"
+               placeholder="Input your text to translate here. You can drag the text area if you need more space!"
         />
         <button>Translate</button>
       </form>

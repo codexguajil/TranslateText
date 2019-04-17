@@ -45,7 +45,7 @@ export class App extends Component {
     return (
       <div className="App">
         <header className="header">
-          Lonely Visitor
+          Translate To French!
         </header>
         <video autoPlay muted loop className="shown">
           <source src="https://previews.customer.envatousercontent.com/h264-video-previews/de1c5be5-54d3-49f3-92d2-d3cc647950c4/9537502.mp4" type="video/mp4" />

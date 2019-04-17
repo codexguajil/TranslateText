@@ -20,7 +20,7 @@
 }
 
 .shown {
-  filter: brightness(70%);
+  filter: brightness(50%);
   position: fixed;
   right: 0;
   bottom: 0;
@@ -36,15 +36,15 @@
 .header {
   color: #FFF;
   font-size: 72px;
-  font-weight: bolder;
-  height: 100px;
+  font-weight: 300;
+  height: 82px;
+  // line-height: 1.7;
   letter-spacing: 10px;
-  // background-color: plum;
   margin: auto;
   width: 65%;
   border-bottom: 1px dotted #FFF;
   &:hover {
-    color: grey;
+    cursor: pointer;
     transition: color .5s ease;
   }
 }
