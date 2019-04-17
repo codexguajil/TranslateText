@@ -15,7 +15,10 @@ export class PhraseContainer extends Component {
     return (
       <div>
         <div className='banner'>
-          <h1 id="heading">Your Current Translations</h1>
+          <div>
+            <h1 id="heading">Your Current Translations</h1>
+            <p>(click each one for details)</p>
+          </div>
           <Link to="/" className="header-a">
               Translate to French.
           </Link>

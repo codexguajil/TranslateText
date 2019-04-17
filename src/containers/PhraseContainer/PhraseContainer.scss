@@ -1,9 +1,10 @@
 .container {
-  background: hsla(360, 360, 360, .3);
-  background: #FFF;
+  background: rgba(0, 255, 255, 0.5);
+  border-top: 1px solid black;
   display: flex;
+  height: 800px;
   flex-wrap: wrap;
-  height: 100vh;
+  background-image: linear-gradient(rgba(19, 223, 223, 0.5), #FFF);
   margin: auto;
   width: 100%;
 }
@@ -33,6 +34,10 @@
 }
 
 .loading {
-  color: #FFF;
+  color: rgb(179, 129, 179);
   font-size: 60px;
+}
+
+#span {
+  font-size: 16px;
 }

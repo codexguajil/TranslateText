@@ -6,7 +6,7 @@ export const Phrase = (props) => {
  const {id, translatedText, deleteTrans} = props
 
     return (
-      <div>
+      <div className="phrase-box">
         <Link to={`/translations/${id}`} className="text-link">
           <div className="text-box">
           {translatedText}

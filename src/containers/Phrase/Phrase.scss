@@ -1,6 +1,5 @@
 .text-box {
-  background: rgb(179, 129, 179);
-  border: 1px dotted #FFF;
+  background: linear-gradient(#FFF, rgb(179, 129, 179));
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.20);
   color: black;
@@ -16,7 +15,7 @@
   overflow: scroll;
   width: 450px;
   &:hover {
-    background: hsla(360,100%,100%, .9);
+    background-color: linear-gradient(rgb(179, 129, 179), #FFF);
     cursor: pointer;
     opacity: 1;
     transition: background-color .5s ease;
@@ -30,16 +29,17 @@
 .delete {
   border: 1px dotted cadetblue;
   color: cadetblue;
+  font-size: 16px;
   height: 20px;
   margin-top: 15px;
+  line-height: 1.2;
   width: 100px;
   border-radius: 80px;
   &:hover {
-    background-color: cadetblue;
     height: 50px;
     margin-top: 8px;
     width: 100px;
-    color: #FFF;
+    box-shadow: 1px 1px black;
     cursor: pointer;
     transition: background-color 1s ease-out,
                 width 1s ease,
@@ -50,4 +50,9 @@
   &:focus {
     outline: none;
   }
+}
+
+.phrase-box {
+  height: 180px;
+  margin: 44px;
 }

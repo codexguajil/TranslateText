@@ -22,11 +22,16 @@ ShallowWrapper {
         <div
           className="banner"
         >
-          <h1
-            id="heading"
-          >
-            Your Current Translations
-          </h1>
+          <div>
+            <h1
+              id="heading"
+            >
+              Your Current Translations
+            </h1>
+            <p>
+              (click each one for details)
+            </p>
+          </div>
           <Link
             className="header-a"
             to="/"
@@ -47,11 +52,16 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h1
-              id="heading"
-            >
-              Your Current Translations
-            </h1>,
+            <div>
+              <h1
+                id="heading"
+              >
+                Your Current Translations
+              </h1>
+              <p>
+                (click each one for details)
+              </p>
+            </div>,
             <Link
               className="header-a"
               to="/"
@@ -68,12 +78,44 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Your Current Translations",
-              "id": "heading",
+              "children": Array [
+                <h1
+                  id="heading"
+                >
+                  Your Current Translations
+                </h1>,
+                <p>
+                  (click each one for details)
+                </p>,
+              ],
             },
             "ref": null,
-            "rendered": "Your Current Translations",
-            "type": "h1",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Your Current Translations",
+                  "id": "heading",
+                },
+                "ref": null,
+                "rendered": "Your Current Translations",
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "(click each one for details)",
+                },
+                "ref": null,
+                "rendered": "(click each one for details)",
+                "type": "p",
+              },
+            ],
+            "type": "div",
           },
           Object {
             "instance": null,
@@ -122,11 +164,16 @@ ShallowWrapper {
           <div
             className="banner"
           >
-            <h1
-              id="heading"
-            >
-              Your Current Translations
-            </h1>
+            <div>
+              <h1
+                id="heading"
+              >
+                Your Current Translations
+              </h1>
+              <p>
+                (click each one for details)
+              </p>
+            </div>
             <Link
               className="header-a"
               to="/"
@@ -147,11 +194,16 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h1
-                id="heading"
-              >
-                Your Current Translations
-              </h1>,
+              <div>
+                <h1
+                  id="heading"
+                >
+                  Your Current Translations
+                </h1>
+                <p>
+                  (click each one for details)
+                </p>
+              </div>,
               <Link
                 className="header-a"
                 to="/"
@@ -168,12 +220,44 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Your Current Translations",
-                "id": "heading",
+                "children": Array [
+                  <h1
+                    id="heading"
+                  >
+                    Your Current Translations
+                  </h1>,
+                  <p>
+                    (click each one for details)
+                  </p>,
+                ],
               },
               "ref": null,
-              "rendered": "Your Current Translations",
-              "type": "h1",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Your Current Translations",
+                    "id": "heading",
+                  },
+                  "ref": null,
+                  "rendered": "Your Current Translations",
+                  "type": "h1",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "(click each one for details)",
+                  },
+                  "ref": null,
+                  "rendered": "(click each one for details)",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
             },
             Object {
               "instance": null,
