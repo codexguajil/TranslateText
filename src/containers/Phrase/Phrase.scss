@@ -1,5 +1,5 @@
 .text-box {
-  background: #FFF;
+  background: rgb(179, 129, 179);
   border: 1px dotted #FFF;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.20);
@@ -8,6 +8,7 @@
   height: 180px;
   letter-spacing: 1px;
   margin: 30px;
+  margin-bottom: 0;
   opacity: 0.9;
   padding: 8px;
   text-align: left;
@@ -27,5 +28,26 @@
 }
 
 .delete {
-  width: 450px;
+  border: 1px dotted cadetblue;
+  color: cadetblue;
+  height: 20px;
+  margin-top: 15px;
+  width: 100px;
+  border-radius: 80px;
+  &:hover {
+    background-color: cadetblue;
+    height: 50px;
+    margin-top: 8px;
+    width: 100px;
+    color: #FFF;
+    cursor: pointer;
+    transition: background-color 1s ease-out,
+                width 1s ease,
+                height .5s ease-in-out,
+                margin-top 1s ease,
+                border-radius 1s ease-in;
+  }
+  &:focus {
+    outline: none;
+  }
 }

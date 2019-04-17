@@ -13,7 +13,7 @@ export const Phrase = (props) => {
           </div>
         </Link>
           <button className="delete"
-                  onClick={() => deleteTrans(id)}>x</button>
+                  onClick={() => deleteTrans(id)}>delete</button>
       </div>
     )
 }
