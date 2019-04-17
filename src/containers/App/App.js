@@ -48,9 +48,6 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        <Link to="/" className="header">
-          Translate to French.
-        </Link>
        {/* <Form handleSubmit={this.handleFormSubmit}/> */}
        <Route exact path='/' component={ () => <Form handleSubmit={this.handleFormSubmit} />} />
        <Route exact path='/translations' component={PhraseContainer} />

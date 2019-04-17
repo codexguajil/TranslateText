@@ -26,6 +26,10 @@ export class Form extends Component {
 
   render() {
     return (
+      <div>
+        <Link to="/" className="header">
+          Translate to French.
+        </Link>
       <form onSubmit={this.handleSubmit}
             className="form">
         <div id="input-cont">
@@ -38,6 +42,7 @@ export class Form extends Component {
             <button>Translate</button>
         </div>
       </form>
+      </div>
     )
   }
 }
