@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import React from 'react'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 export const Phrase = (props) => {
  const {id, translatedText} = props
@@ -12,7 +12,11 @@ export const Phrase = (props) => {
         </div>
       </Link>
     )
-  
 }
 
 export default Phrase
+
+Phrase.propTypes = {
+  id: PropTypes.string,
+  translatedText: PropTypes.string
+}

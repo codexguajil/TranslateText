@@ -6,6 +6,7 @@ import { storeTranslation } from '../../actions';
 import PhraseContainer from '../PhraseContainer/PhraseContainer';
 import {Phrase} from '../Phrase/Phrase';
 import key from '../../utils/apiKEY';
+import PropTypes from 'prop-types';
 
 export class App extends Component {
   constructor() {
@@ -25,7 +26,6 @@ export class App extends Component {
         body: JSON.stringify(content),
       })
       newPhrase = await response.json()
-      console.log(newPhrase)
     } catch(error) {
       return error.message
     }
@@ -43,7 +43,7 @@ export class App extends Component {
   findTranslation = ({match}) => {
     const foundTranslation = this.props.translations.find(card => card.id === match.params.id)
     if(!foundTranslation) {
-      return '404 no note found!'
+      return '404 no translation found!'
     }
     return <Phrase {...foundTranslation} />
   }
@@ -74,3 +74,8 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
+
+App.propTypes = {
+  translations: PropTypes.array,
+  storeTranslation: PropTypes.func
+}
