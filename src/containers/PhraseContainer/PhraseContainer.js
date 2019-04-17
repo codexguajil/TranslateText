@@ -22,8 +22,11 @@ export class PhraseContainer extends Component {
           </Link>
         </div>
       <div className="container">
+        {this.props.isLoading && 
+          <h1 className="loading">Loading...</h1>
+        }
         {this.props.phrases && 
-          this.props.phrases.map(phrase => <Phrase {...phrase} deleteTrans={this.deleteTrans}/>)
+          this.props.phrases.map(phrase => <Phrase key={phrase.id} {...phrase} deleteTrans={this.deleteTrans}/>)
         }
       </div>
       </div>

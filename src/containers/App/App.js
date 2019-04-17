@@ -11,9 +11,13 @@ import {Details} from '../../components/Details/Details';
 export class App extends Component {
   constructor() {
     super();
+    this.state = {
+      isLoading: false
+    }
   }
 
   translateWords = async (content) => {
+    this.setState({isLoading: true})
     const shortid = require('shortid');
     let newPhrase;
     const url = `https://translation.googleapis.com/language/translate/v2?key=${key}&format=text`
@@ -26,6 +30,7 @@ export class App extends Component {
     } catch(error) {
       return error.message
     }
+    this.setState({isLoading: false})
     this.props.storeTranslation({...newPhrase.data.translations[0], id: shortid.generate(), original: content.q})
   }
 
@@ -48,9 +53,8 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-       {/* <Form handleSubmit={this.handleFormSubmit}/> */}
        <Route exact path='/' component={ () => <Form handleSubmit={this.handleFormSubmit} />} />
-       <Route exact path='/translations' component={PhraseContainer} />
+       <Route exact path='/translations' component={ () => <PhraseContainer loading={this.state.isLoading} /> } />
        <Route path='/translations/:id' render={this.findTranslation} />
       </div>
     );

@@ -2,10 +2,13 @@
   background: #FFF;
   display: inline-flex;
   flex-direction: column;
-  // margin-top: 300px;
   padding-top: 26px;
   padding-bottom: 26px;
   width: 100%;
+}
+
+.header {
+  margin-top: 200px;
 }
 
 .input {
@@ -58,5 +61,18 @@ button {
   }
   &:focus {
     outline: none;
+  }
+}
+
+.nav-link {
+  color: black;
+  font-size: 26px;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  width: 300px;
+  &:hover {
+    color: hsla(340,80%,45%, .5);
+    text-decoration-color: black;
   }
 }
