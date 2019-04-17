@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {App, mapStateToProps, mapDispatchToProps} from './App';
-import {storeTranslation} from '../../actions'
+import {storeTranslation, postMessage} from '../../actions'
 import {shallow} from 'enzyme'
+import {Details} from '../../components/Details/Details'
 
 jest.mock('../../actions')
 
@@ -55,6 +56,18 @@ describe('App', () => {
 
       expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch)
     })
+
+    it('calls dispatch with a message if there`s an error', () => {
+      const mockError = 'this is an error'
+
+      const mockDispatch = jest.fn()
+      const actionToDispatch = postMessage(mockError)
+
+      const mappedProps = mapDispatchToProps(mockDispatch)
+      mappedProps.postMessage(mockError)
+
+      expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch)
+    })
   })
 
   describe('handleFormSubmit', () => {
@@ -78,8 +91,12 @@ describe('App', () => {
 
   describe('translateWords', () => {
     it('should update the store with a translation object', async () => {
+      let props = {
+        storeTranslation: jest.fn()
+      }
+
       wrapper = shallow(
-        <App />
+        <App {...props} />
       )
 
       const mockContent = {
@@ -94,8 +111,8 @@ describe('App', () => {
         original:"hello."
       }
 
-       wrapper.instance().translateWords(mockContent)
-       await expect(storeTranslation).toHaveBeenCalledWith(mockTranslation)
+       await wrapper.instance().translateWords(mockContent)
+       await expect(wrapper.instance().props.storeTranslation).toHaveBeenCalled()
     })
 
     it('should return an error if missing url or object', async () => {
@@ -105,6 +122,26 @@ describe('App', () => {
         } catch (error) {
           expect(error).toEqual('error')
         }
+    })
+
+    it('should set state when translateWords is called', async () => {
+      wrapper = shallow(
+        <App />
+        )
+        
+      wrapper.instance().setState = jest.fn()
+      await wrapper.instance().translateWords()
+      await expect(wrapper.instance().setState).toHaveBeenCalled()
+    })
+
+    it('should set state to true when translateWords runs', async () => {
+      wrapper = shallow(
+        <App />
+      )
+
+      expect(wrapper.state('isLoading')).toEqual(false)
+      await wrapper.instance().translateWords('hello')
+      await expect(wrapper.state('isLoading')).toEqual(true)
     })
   })
 
@@ -126,6 +163,36 @@ describe('App', () => {
       let match = {params: {id: 14}, isExact: true, path: "", url: ""}
       let result = wrapper.instance().findTranslation({match})
       expect(result).toEqual('404 no translation found!')
+    })
+
+    it('should return a Detail component if a translation is clicked', () => {
+      let props = {
+        translations: [{translatedText: 'bonjour', id: '14'}, {translatedText: 'au revoir', id: '10'}]
+      }
+
+      let match = { params: { id: '14' }, isExact: true, path: '', url: '' }
+
+      wrapper = shallow(
+        <App {...props} />
+      )
+
+      let result = wrapper.instance().findTranslation({match})
+      expect(result).toEqual(<Details id="14" translatedText="bonjour" />)
+    })
+  })
+
+  describe('handleError', () => {
+    it('should post an error in store', () => {
+      let props = {
+        postMessage: jest.fn()
+      }
+
+      wrapper = shallow(
+        <App {...props} />
+      )
+
+      wrapper.instance().handleError('error message')
+      expect(wrapper.instance().props.postMessage).toHaveBeenCalledWith('error message')
     })
   })
 })

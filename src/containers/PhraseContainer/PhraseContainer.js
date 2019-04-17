@@ -12,7 +12,6 @@ export class PhraseContainer extends Component {
   }
 
   render() {
-    console.log(this.props)
     return (
       <div>
         <div className='banner'>
@@ -22,7 +21,7 @@ export class PhraseContainer extends Component {
           </Link>
         </div>
       <div className="container">
-        {this.props.isLoading && 
+        {this.props.loading && 
           <h1 className="loading">Loading...</h1>
         }
         {this.props.phrases && 

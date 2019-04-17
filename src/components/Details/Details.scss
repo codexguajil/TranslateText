@@ -6,17 +6,22 @@
   font-size: 32px;
   height: 600px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 95%;
 }
 
 .left {
   background: plum;
-  border-right: 1px solid black;
+  height: 500px;
   margin: auto;
+  overflow: scroll;
+  width: 350px;
 }
 
 .right {
   background: cadetblue;
+  height: 500px;
   margin: auto;
+  overflow: scroll;
+  width: 350px;
 }

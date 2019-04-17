@@ -16,7 +16,6 @@ export class Form extends Component {
   }
 
   handleClick = () => {
-    console.log(this.props)
     let { history, translations } = this.props
     if(translations.length) {
       history.push('/translations')
@@ -40,13 +39,13 @@ export class Form extends Component {
     return (
       <div>
           
-            <button onClick={this.handleClick} className="nav-link">
+        <button onClick={this.handleClick} className="nav-link">
               See Translations.
-            </button>
+        </button>
           
-          <Link to="/" className="header">
+        <Link to="/" className="header">
             Translate to French.
-          </Link>
+        </Link>
       <form onSubmit={this.handleSubmit}
             className="form">
         <div id="input-cont">

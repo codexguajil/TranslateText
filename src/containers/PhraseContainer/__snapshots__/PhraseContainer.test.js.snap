@@ -19,11 +19,21 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1
-          id="heading"
+        <div
+          className="banner"
         >
-          Your Past Translations
-        </h1>,
+          <h1
+            id="heading"
+          >
+            Your Current Translations
+          </h1>
+          <Link
+            className="header-a"
+            to="/"
+          >
+            Translate to French.
+          </Link>
+        </div>,
         <div
           className="container"
         />,
@@ -36,23 +46,67 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Your Past Translations",
-          "id": "heading",
+          "children": Array [
+            <h1
+              id="heading"
+            >
+              Your Current Translations
+            </h1>,
+            <Link
+              className="header-a"
+              to="/"
+            >
+              Translate to French.
+            </Link>,
+          ],
+          "className": "banner",
         },
         "ref": null,
-        "rendered": "Your Past Translations",
-        "type": "h1",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Your Current Translations",
+              "id": "heading",
+            },
+            "ref": null,
+            "rendered": "Your Current Translations",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Translate to French.",
+              "className": "header-a",
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": "Translate to French.",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
+          "children": Array [
+            undefined,
+            undefined,
+          ],
           "className": "container",
         },
         "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          undefined,
+          undefined,
+        ],
         "type": "div",
       },
     ],
@@ -65,11 +119,21 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1
-            id="heading"
+          <div
+            className="banner"
           >
-            Your Past Translations
-          </h1>,
+            <h1
+              id="heading"
+            >
+              Your Current Translations
+            </h1>
+            <Link
+              className="header-a"
+              to="/"
+            >
+              Translate to French.
+            </Link>
+          </div>,
           <div
             className="container"
           />,
@@ -82,23 +146,67 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Your Past Translations",
-            "id": "heading",
+            "children": Array [
+              <h1
+                id="heading"
+              >
+                Your Current Translations
+              </h1>,
+              <Link
+                className="header-a"
+                to="/"
+              >
+                Translate to French.
+              </Link>,
+            ],
+            "className": "banner",
           },
           "ref": null,
-          "rendered": "Your Past Translations",
-          "type": "h1",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Your Current Translations",
+                "id": "heading",
+              },
+              "ref": null,
+              "rendered": "Your Current Translations",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Translate to French.",
+                "className": "header-a",
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Translate to French.",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": Array [
+              undefined,
+              undefined,
+            ],
             "className": "container",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            undefined,
+            undefined,
+          ],
           "type": "div",
         },
       ],

@@ -18,42 +18,194 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <div
-        id="input-cont"
-      >
-        <textarea
-          className="input"
-          name="text"
-          onChange={[Function]}
-          placeholder="Type your english text to translate here! Expand the text area for more space."
-          value=""
-        />
-        <button>
-          Translate
-        </button>
-      </div>,
-      "className": "form",
-      "onSubmit": [Function],
+      "children": Array [
+        <button
+          className="nav-link"
+          onClick={[Function]}
+        >
+          See Translations.
+        </button>,
+        <Link
+          className="header"
+          to="/"
+        >
+          Translate to French.
+        </Link>,
+        <form
+          className="form"
+          onSubmit={[Function]}
+        >
+          <div
+            id="input-cont"
+          >
+            <textarea
+              className="input"
+              name="text"
+              onChange={[Function]}
+              placeholder="Type your english text to translate here! Expand the text area for more space."
+              value=""
+            />
+            <button
+              className="translate-btn"
+            >
+              Translate
+            </button>
+          </div>
+        </form>,
+      ],
     },
     "ref": null,
-    "rendered": Object {
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "See Translations.",
+          "className": "nav-link",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "See Translations.",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Translate to French.",
+          "className": "header",
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": "Translate to French.",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            id="input-cont"
+          >
+            <textarea
+              className="input"
+              name="text"
+              onChange={[Function]}
+              placeholder="Type your english text to translate here! Expand the text area for more space."
+              value=""
+            />
+            <button
+              className="translate-btn"
+            >
+              Translate
+            </button>
+          </div>,
+          "className": "form",
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <textarea
+                className="input"
+                name="text"
+                onChange={[Function]}
+                placeholder="Type your english text to translate here! Expand the text area for more space."
+                value=""
+              />,
+              <button
+                className="translate-btn"
+              >
+                Translate
+              </button>,
+            ],
+            "id": "input-cont",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "input",
+                "name": "text",
+                "onChange": [Function],
+                "placeholder": "Type your english text to translate here! Expand the text area for more space.",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "textarea",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Translate",
+                "className": "translate-btn",
+              },
+              "ref": null,
+              "rendered": "Translate",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "form",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <textarea
-            className="input"
-            name="text"
-            onChange={[Function]}
-            placeholder="Type your english text to translate here! Expand the text area for more space."
-            value=""
-          />,
-          <button>
-            Translate
+          <button
+            className="nav-link"
+            onClick={[Function]}
+          >
+            See Translations.
           </button>,
+          <Link
+            className="header"
+            to="/"
+          >
+            Translate to French.
+          </Link>,
+          <form
+            className="form"
+            onSubmit={[Function]}
+          >
+            <div
+              id="input-cont"
+            >
+              <textarea
+                className="input"
+                name="text"
+                onChange={[Function]}
+                placeholder="Type your english text to translate here! Expand the text area for more space."
+                value=""
+              />
+              <button
+                className="translate-btn"
+              >
+                Translate
+              </button>
+            </div>
+          </form>,
         ],
-        "id": "input-cont",
       },
       "ref": null,
       "rendered": Array [
@@ -62,107 +214,109 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "input",
-            "name": "text",
-            "onChange": [Function],
-            "placeholder": "Type your english text to translate here! Expand the text area for more space.",
-            "value": "",
+            "children": "See Translations.",
+            "className": "nav-link",
+            "onClick": [Function],
           },
           "ref": null,
-          "rendered": null,
-          "type": "textarea",
+          "rendered": "See Translations.",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Translate to French.",
+            "className": "header",
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "Translate to French.",
+          "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Translate",
+            "children": <div
+              id="input-cont"
+            >
+              <textarea
+                className="input"
+                name="text"
+                onChange={[Function]}
+                placeholder="Type your english text to translate here! Expand the text area for more space."
+                value=""
+              />
+              <button
+                className="translate-btn"
+              >
+                Translate
+              </button>
+            </div>,
+            "className": "form",
+            "onSubmit": [Function],
           },
           "ref": null,
-          "rendered": "Translate",
-          "type": "button",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <textarea
+                  className="input"
+                  name="text"
+                  onChange={[Function]}
+                  placeholder="Type your english text to translate here! Expand the text area for more space."
+                  value=""
+                />,
+                <button
+                  className="translate-btn"
+                >
+                  Translate
+                </button>,
+              ],
+              "id": "input-cont",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "input",
+                  "name": "text",
+                  "onChange": [Function],
+                  "placeholder": "Type your english text to translate here! Expand the text area for more space.",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "textarea",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Translate",
+                  "className": "translate-btn",
+                },
+                "ref": null,
+                "rendered": "Translate",
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "form",
         },
       ],
       "type": "div",
-    },
-    "type": "form",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <div
-          id="input-cont"
-        >
-          <textarea
-            className="input"
-            name="text"
-            onChange={[Function]}
-            placeholder="Type your english text to translate here! Expand the text area for more space."
-            value=""
-          />
-          <button>
-            Translate
-          </button>
-        </div>,
-        "className": "form",
-        "onSubmit": [Function],
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <textarea
-              className="input"
-              name="text"
-              onChange={[Function]}
-              placeholder="Type your english text to translate here! Expand the text area for more space."
-              value=""
-            />,
-            <button>
-              Translate
-            </button>,
-          ],
-          "id": "input-cont",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": "input",
-              "name": "text",
-              "onChange": [Function],
-              "placeholder": "Type your english text to translate here! Expand the text area for more space.",
-              "value": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "textarea",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Translate",
-            },
-            "ref": null,
-            "rendered": "Translate",
-            "type": "button",
-          },
-        ],
-        "type": "div",
-      },
-      "type": "form",
     },
   ],
   Symbol(enzyme.__options__): Object {
