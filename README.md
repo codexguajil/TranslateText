@@ -35,7 +35,7 @@ TranslateText is a project based on the Google Translate application. It allows 
 ## Screenshots
 
 <img width="1440" alt="Screen Shot 2019-04-17 at 5 52 25 PM" src="https://user-images.githubusercontent.com/20582868/56327913-c523d200-6139-11e9-94e0-64d02d85fd6f.png">
-<img width="1440" alt="Screen Shot 2019-04-17 at 5 53 10 PM" src="https://user-images.githubusercontent.com/20582868/56327915-c654ff00-6139-11e9-9ab5-ade1005f66f9.png">
+![2019-04-17 17 56 05](https://user-images.githubusercontent.com/20582868/56328017-2e0b4a00-613a-11e9-8525-521fd1c2c0c6.gif)
 <img width="1440" alt="Screen Shot 2019-04-17 at 5 53 22 PM" src="https://user-images.githubusercontent.com/20582868/56327916-c81ec280-6139-11e9-8384-7e2f4651a473.png">
 
 
