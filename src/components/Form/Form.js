@@ -16,7 +16,9 @@ export default class Form extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    this.props.handleSubmit(this.state.text)
+    if(this.state.text) {
+      this.props.handleSubmit(this.state.text)
+    }
   }
 
   render() {
@@ -28,10 +30,9 @@ export default class Form extends Component {
                   name="text"
                   onChange={this.handleChange}
                   className="input"
-                  placeholder="Input your text to translate here. You can drag the text area if you need more space!"
+                  placeholder="Type your english text to translate here! Expand the text area for more space."
             />
           <button>Translate</button>
-
         </div>
       </form>
     )

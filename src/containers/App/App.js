@@ -7,6 +7,7 @@ import PhraseContainer from '../PhraseContainer/PhraseContainer';
 import {Phrase} from '../Phrase/Phrase';
 import key from '../../utils/apiKEY';
 import PropTypes from 'prop-types';
+import {Details} from '../../components/Details/Details';
 
 export class App extends Component {
   constructor() {
@@ -45,7 +46,7 @@ export class App extends Component {
     if(!foundTranslation) {
       return '404 no translation found!'
     }
-    return <Phrase {...foundTranslation} />
+    return <Details {...foundTranslation} />
   }
 
   render() {
