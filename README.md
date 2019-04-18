@@ -36,7 +36,11 @@ TranslateText is a project based on the Google Translate application. It allows 
 
 <img width="1440" alt="Screen Shot 2019-04-17 at 5 52 25 PM" src="https://user-images.githubusercontent.com/20582868/56327913-c523d200-6139-11e9-94e0-64d02d85fd6f.png">
 
+![2019-04-17 23 38 04](https://user-images.githubusercontent.com/20582868/56339095-f9af8200-6169-11e9-9d6d-ea0db15db242.gif)
+
 ![2019-04-17 17 56 05](https://user-images.githubusercontent.com/20582868/56328017-2e0b4a00-613a-11e9-8525-521fd1c2c0c6.gif)
+
+![2019-04-17 23 40 29](https://user-images.githubusercontent.com/20582868/56339284-c9b4ae80-616a-11e9-8086-ff98c8ba8d37.gif)
 
 <img width="1440" alt="Screen Shot 2019-04-17 at 5 53 22 PM" src="https://user-images.githubusercontent.com/20582868/56327916-c81ec280-6139-11e9-8384-7e2f4651a473.png">
 
