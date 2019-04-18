@@ -1,4 +1,4 @@
-# TranslateText
+# TranslateText powered with Google Cloud
 
 A web-based translation application
 
@@ -28,9 +28,10 @@ TranslateText is a project based on the Google Translate application. It allows 
 - ReactJS
 - Redux
 - React Router
-- Node/Expresss
+- Node/Express
 - Jest/Enzyme
 - Sass
+- Google Cloud
 
 ## Screenshots
 
