@@ -29,7 +29,6 @@ TranslateText is a project based on the Google Translate application. It allows 
 - ReactJS
 - Redux
 - React Router
-- Node/Express
 - Jest/Enzyme
 - Sass
 - Google Cloud
