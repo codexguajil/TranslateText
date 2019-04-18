@@ -59,7 +59,7 @@ describe('Form', () => {
       <Form {...props} />
       )
 
-      wrapper.setState({text: 'hello'})
+      wrapper.setState({text: 'hello', language: 'spanish'})
       let mockEvent = { preventDefault: jest.fn()}
       wrapper.instance().handleSubmit(mockEvent)
       expect(wrapper.instance().props.handleSubmit).toHaveBeenCalled()
@@ -112,5 +112,14 @@ describe('Form', () => {
       let mockEvent = { preventDefault: jest.fn()}
       wrapper.instance().handleClick(mockEvent)
       expect(wrapper.instance().props.handleError).toHaveBeenCalled()
+  })
+
+  describe('handleLang', () => {
+
+    it('should set state to passed in id and language', () => {
+      wrapper.instance().setState = jest.fn()
+      wrapper.instance().handleLang('fr', 'french')
+      expect(wrapper.instance().setState).toBeCalled()
+    })
   })
 })

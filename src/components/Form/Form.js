@@ -38,6 +38,10 @@ export class Form extends Component {
     let { history } = this.props
     let { text, id, language } = this.state
     e.preventDefault()
+    if(!language) {
+      this.props.handleError('select a language to translate to.')
+      return;
+    }
     if(this.state.text) {
       this.props.handleSubmit(text, id, language)
       history.push('/translations')
@@ -65,7 +69,7 @@ export class Form extends Component {
                   name="text"
                   onChange={this.handleChange}
                   className="input"
-                  placeholder="Type your english text to translate here! Expand the text area for more space."
+                  placeholder="1. Select a language. 2. Type your english text to translate here! Expand the text area for more space."
             />
             <button className="translate-btn">Translate</button>
         </div>

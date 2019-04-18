@@ -50,7 +50,7 @@ ShallowWrapper {
               className="input"
               name="text"
               onChange={[Function]}
-              placeholder="Type your english text to translate here! Expand the text area for more space."
+              placeholder="1. Select a language. 2. Type your english text to translate here! Expand the text area for more space."
               value=""
             />
             <button
@@ -134,7 +134,7 @@ ShallowWrapper {
               className="input"
               name="text"
               onChange={[Function]}
-              placeholder="Type your english text to translate here! Expand the text area for more space."
+              placeholder="1. Select a language. 2. Type your english text to translate here! Expand the text area for more space."
               value=""
             />
             <button
@@ -157,7 +157,7 @@ ShallowWrapper {
                 className="input"
                 name="text"
                 onChange={[Function]}
-                placeholder="Type your english text to translate here! Expand the text area for more space."
+                placeholder="1. Select a language. 2. Type your english text to translate here! Expand the text area for more space."
                 value=""
               />,
               <button
@@ -178,7 +178,7 @@ ShallowWrapper {
                 "className": "input",
                 "name": "text",
                 "onChange": [Function],
-                "placeholder": "Type your english text to translate here! Expand the text area for more space.",
+                "placeholder": "1. Select a language. 2. Type your english text to translate here! Expand the text area for more space.",
                 "value": "",
               },
               "ref": null,
@@ -243,7 +243,7 @@ ShallowWrapper {
                 className="input"
                 name="text"
                 onChange={[Function]}
-                placeholder="Type your english text to translate here! Expand the text area for more space."
+                placeholder="1. Select a language. 2. Type your english text to translate here! Expand the text area for more space."
                 value=""
               />
               <button
@@ -327,7 +327,7 @@ ShallowWrapper {
                 className="input"
                 name="text"
                 onChange={[Function]}
-                placeholder="Type your english text to translate here! Expand the text area for more space."
+                placeholder="1. Select a language. 2. Type your english text to translate here! Expand the text area for more space."
                 value=""
               />
               <button
@@ -350,7 +350,7 @@ ShallowWrapper {
                   className="input"
                   name="text"
                   onChange={[Function]}
-                  placeholder="Type your english text to translate here! Expand the text area for more space."
+                  placeholder="1. Select a language. 2. Type your english text to translate here! Expand the text area for more space."
                   value=""
                 />,
                 <button
@@ -371,7 +371,7 @@ ShallowWrapper {
                   "className": "input",
                   "name": "text",
                   "onChange": [Function],
-                  "placeholder": "Type your english text to translate here! Expand the text area for more space.",
+                  "placeholder": "1. Select a language. 2. Type your english text to translate here! Expand the text area for more space.",
                   "value": "",
                 },
                 "ref": null,
