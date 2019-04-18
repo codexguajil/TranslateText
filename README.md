@@ -40,6 +40,8 @@ TranslateText is a project based on the Google Translate application. It allows 
 
 ![2019-04-17 17 56 05](https://user-images.githubusercontent.com/20582868/56328017-2e0b4a00-613a-11e9-8525-521fd1c2c0c6.gif)
 
+![2019-04-17 23 40 29](https://user-images.githubusercontent.com/20582868/56339284-c9b4ae80-616a-11e9-8086-ff98c8ba8d37.gif)
+
 <img width="1440" alt="Screen Shot 2019-04-17 at 5 53 22 PM" src="https://user-images.githubusercontent.com/20582868/56327916-c81ec280-6139-11e9-8384-7e2f4651a473.png">
 
 
