@@ -22,3 +22,9 @@
     cursor: default;
   }
 }
+
+.dd-header-title {
+  &:hover {
+    background-color: hsla(300,100%,30%, .1);
+  }
+}
