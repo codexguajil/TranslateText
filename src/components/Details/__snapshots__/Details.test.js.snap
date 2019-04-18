@@ -41,9 +41,7 @@ ShallowWrapper {
           <section
             className="left"
           >
-            <h1>
-              Français
-            </h1>
+            <h1 />
           </section>
           <section
             className="right"
@@ -118,9 +116,7 @@ ShallowWrapper {
             <section
               className="left"
             >
-              <h1>
-                Français
-              </h1>
+              <h1 />
             </section>,
             <section
               className="right"
@@ -140,9 +136,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <h1>
-                  Français
-                </h1>,
+                <h1 />,
                 undefined,
               ],
               "className": "left",
@@ -154,10 +148,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Français",
+                  "children": undefined,
                 },
                 "ref": null,
-                "rendered": "Français",
+                "rendered": null,
                 "type": "h1",
               },
               undefined,
@@ -229,9 +223,7 @@ ShallowWrapper {
             <section
               className="left"
             >
-              <h1>
-                Français
-              </h1>
+              <h1 />
             </section>
             <section
               className="right"
@@ -306,9 +298,7 @@ ShallowWrapper {
               <section
                 className="left"
               >
-                <h1>
-                  Français
-                </h1>
+                <h1 />
               </section>,
               <section
                 className="right"
@@ -328,9 +318,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <h1>
-                    Français
-                  </h1>,
+                  <h1 />,
                   undefined,
                 ],
                 "className": "left",
@@ -342,10 +330,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Français",
+                    "children": undefined,
                   },
                   "ref": null,
-                  "rendered": "Français",
+                  "rendered": null,
                   "type": "h1",
                 },
                 undefined,

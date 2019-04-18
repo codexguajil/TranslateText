@@ -24,7 +24,7 @@ export class App extends Component {
     }, 2000)
   }
 
-  translateWords = async (content) => {
+  translateWords = async (content, language) => {
     this.setState({isLoading: true})
     const shortid = require('shortid');
     let newPhrase;
@@ -39,15 +39,15 @@ export class App extends Component {
       return error.message
     }
     this.setState({isLoading: false})
-    this.props.storeTranslation({...newPhrase.data.translations[0], id: shortid.generate(), original: content.q})
+    this.props.storeTranslation({...newPhrase.data.translations[0], id: shortid.generate(), original: content.q, lang: language})
   }
 
-  handleFormSubmit = (text, lang) => {
+  handleFormSubmit = (text, id, language) => {
     let content = {
       'q': text,
-      'target': lang
+      'target': id
     }
-    this.translateWords(content)
+    this.translateWords(content, language)
   }
 
   findTranslation = ({match}) => {

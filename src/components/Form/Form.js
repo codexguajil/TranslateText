@@ -7,7 +7,8 @@ export class Form extends Component {
     super();
     this.state = {
       text: '',
-      lang: '',
+      id: '',
+      language: '',
     }
   }
 
@@ -17,9 +18,10 @@ export class Form extends Component {
     })
   }
 
-  handleLang = (val) => {
+  handleLang = (val, lang) => {
     this.setState({
-      lang: val
+      id: val,
+      language: lang,
     })
   }
 
@@ -34,10 +36,10 @@ export class Form extends Component {
 
   handleSubmit = (e) => {
     let { history } = this.props
-    let { text, lang } = this.state
+    let { text, id, language } = this.state
     e.preventDefault()
     if(this.state.text) {
-      this.props.handleSubmit(text, lang)
+      this.props.handleSubmit(text, id, language)
       history.push('/translations')
     } else {
       this.props.handleError('type something to translate')
@@ -53,7 +55,7 @@ export class Form extends Component {
         </button>
           
         <Link to="/" className="header">
-            Translate to French.
+            Translate to French.<span className="title">(and now any language.)</span>
         </Link>
         <DropDown handleLang={this.handleLang} />
       <form onSubmit={this.handleSubmit}

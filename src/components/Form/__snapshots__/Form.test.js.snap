@@ -30,7 +30,15 @@ ShallowWrapper {
           to="/"
         >
           Translate to French.
+          <span
+            className="title"
+          >
+            (and now any language.)
+          </span>
         </Link>,
+        <DropDown
+          handleLang={[Function]}
+        />,
         <form
           className="form"
           onSubmit={[Function]}
@@ -74,12 +82,44 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "Translate to French.",
+          "children": Array [
+            "Translate to French.",
+            <span
+              className="title"
+            >
+              (and now any language.)
+            </span>,
+          ],
           "className": "header",
           "to": "/",
         },
         "ref": null,
-        "rendered": "Translate to French.",
+        "rendered": Array [
+          "Translate to French.",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "(and now any language.)",
+              "className": "title",
+            },
+            "ref": null,
+            "rendered": "(and now any language.)",
+            "type": "span",
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "handleLang": [Function],
+        },
+        "ref": null,
+        "rendered": null,
         "type": [Function],
       },
       Object {
@@ -183,7 +223,15 @@ ShallowWrapper {
             to="/"
           >
             Translate to French.
+            <span
+              className="title"
+            >
+              (and now any language.)
+            </span>
           </Link>,
+          <DropDown
+            handleLang={[Function]}
+          />,
           <form
             className="form"
             onSubmit={[Function]}
@@ -227,12 +275,44 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "Translate to French.",
+            "children": Array [
+              "Translate to French.",
+              <span
+                className="title"
+              >
+                (and now any language.)
+              </span>,
+            ],
             "className": "header",
             "to": "/",
           },
           "ref": null,
-          "rendered": "Translate to French.",
+          "rendered": Array [
+            "Translate to French.",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "(and now any language.)",
+                "className": "title",
+              },
+              "ref": null,
+              "rendered": "(and now any language.)",
+              "type": "span",
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "handleLang": [Function],
+          },
+          "ref": null,
+          "rendered": null,
           "type": [Function],
         },
         Object {

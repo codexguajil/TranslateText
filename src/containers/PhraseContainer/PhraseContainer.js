@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import Phrase from '../Phrase/Phrase'
+import {Phrase} from '../Phrase/Phrase'
 import PropTypes from 'prop-types'
 import {deleteTrans} from '../../actions'
 import { Link, withRouter } from 'react-router-dom'

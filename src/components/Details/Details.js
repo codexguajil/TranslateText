@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, withRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export const Details = (props) => {
- const {translatedText, original} = props
+ const {translatedText, original, lang} = props
     return (
         <div>
           <div className='banner'>
@@ -16,7 +16,7 @@ export const Details = (props) => {
         </div>
           <div className="details-field">
             <section className="left">
-              <h1>Français</h1>
+              <h1>{lang}</h1>
               {translatedText}
             </section>
             <section className="right">

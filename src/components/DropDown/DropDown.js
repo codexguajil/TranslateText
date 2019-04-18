@@ -4,6 +4,7 @@ export default class DropDown extends Component {
   constructor() {
     super();
     this.state = {
+      clicked: 'Languages',
       open: false,
       languages: [
         {language: 'Afrikaans', id: 'af'},
@@ -114,8 +115,9 @@ export default class DropDown extends Component {
     }
   }
 
-  handleClick = (id) => {
-    this.props.handleLang(id)
+  handleClick = (id, lang) => {
+    this.props.handleLang(id, lang)
+    this.setState({clicked: lang})
   }
 
   toggleLang = () => {
@@ -127,13 +129,13 @@ export default class DropDown extends Component {
   render() {
     const { open, languages } = this.state
     return (
-      <div className="dd-wrapper">
+      <div className="dd-wrapper" onBlur={() => this.toggleLang()} tabIndex="0" >
       <div className="dd-header" onClick={() => this.toggleLang()}>
-        <div className="dd-header-title">Languages</div>
+        <div className="dd-header-title">{this.state.clicked}</div>
       </div>
         { open &&
           <ul className="dd-list">
-            { languages.map(item => (<li key={item.id} className="dd-item" onClick={() => this.handleClick(item.id)}>{item.language}</li>))}
+            { languages.map(item => (<li key={item.id} className="dd-item" onClick={() => this.handleClick(item.id, item.language)}>{item.language}</li>))}
           </ul>
         }
       </div>

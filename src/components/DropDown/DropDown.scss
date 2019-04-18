@@ -1,11 +1,18 @@
 .dd-wrapper {
+  display: inline-flex;
   height: 50px;
-  width: 100px;
+  width: 200px;
   z-index: 3;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    cursor: default;
+  }
 }
 
 .dd-list {
-  height: 100px;
+  height: 120px;
   overflow: scroll;
 }
 
