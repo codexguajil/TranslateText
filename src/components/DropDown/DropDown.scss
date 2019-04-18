@@ -1,0 +1,17 @@
+.dd-wrapper {
+  height: 50px;
+  width: 100px;
+  z-index: 3;
+}
+
+.dd-list {
+  height: 100px;
+  overflow: scroll;
+}
+
+.dd-item {
+  &:hover {
+    background-color: greenyellow;
+    cursor: default;
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, withRouther } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 
 export const Details = (props) => {
  const {translatedText, original} = props

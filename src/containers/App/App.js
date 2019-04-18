@@ -42,10 +42,10 @@ export class App extends Component {
     this.props.storeTranslation({...newPhrase.data.translations[0], id: shortid.generate(), original: content.q})
   }
 
-  handleFormSubmit = (text) => {
+  handleFormSubmit = (text, lang) => {
     let content = {
       'q': text,
-      'target': 'fr'
+      'target': lang
     }
     this.translateWords(content)
   }

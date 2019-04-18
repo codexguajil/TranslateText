@@ -1,17 +1,25 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom'
+import DropDown from '../DropDown/DropDown'
 
 export class Form extends Component {
   constructor() {
     super();
     this.state = {
       text: '',
+      lang: '',
     }
   }
 
   handleChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value
+    })
+  }
+
+  handleLang = (val) => {
+    this.setState({
+      lang: val
     })
   }
 
@@ -26,9 +34,10 @@ export class Form extends Component {
 
   handleSubmit = (e) => {
     let { history } = this.props
+    let { text, lang } = this.state
     e.preventDefault()
     if(this.state.text) {
-      this.props.handleSubmit(this.state.text)
+      this.props.handleSubmit(text, lang)
       history.push('/translations')
     } else {
       this.props.handleError('type something to translate')
@@ -46,6 +55,7 @@ export class Form extends Component {
         <Link to="/" className="header">
             Translate to French.
         </Link>
+        <DropDown handleLang={this.handleLang} />
       <form onSubmit={this.handleSubmit}
             className="form">
         <div id="input-cont">
