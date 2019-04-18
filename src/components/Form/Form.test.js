@@ -83,7 +83,20 @@ describe('Form', () => {
   })
 
   it('should return an error if a language hasnt been selected', () => {
+    let props = {
+      handleError: jest.fn(),
+      handleSubmit: jest.fn(),
+      history: { push: jest.fn() }
+    }
 
+    let wrapper = shallow(
+      <Form {...props} />
+      )
+
+      wrapper.setState({text: 'hello'})
+      let mockEvent = { preventDefault: jest.fn()}
+      wrapper.instance().handleSubmit(mockEvent)
+      expect(wrapper.instance().props.handleError).toHaveBeenCalledWith('select a language to translate to.')
   })
 
   it('should have props', () => {
