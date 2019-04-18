@@ -43,7 +43,6 @@ describe('PhraseContainer', () => {
     </div>
 
       let expected = wrapper.instance().render()
-      // expect(JSON.stringify(expected)).toEqual(JSON.stringify(mockReturn) )
     })
 
   describe('mapStateToProps', () => {
