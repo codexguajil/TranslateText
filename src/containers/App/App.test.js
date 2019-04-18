@@ -79,13 +79,15 @@ describe('App', () => {
       wrapper.instance().translateWords = jest.fn()
 
       let mockText = 'hello;'
+      let mockTarget = 'fr'
+      let mockLanguage = 'French'
       let expected = {
         'q': mockText,
-        'target': 'fr'
+        'target': mockTarget
       }
 
-      wrapper.instance().handleFormSubmit(mockText)
-      expect(wrapper.instance().translateWords).toHaveBeenCalledWith(expected)
+      wrapper.instance().handleFormSubmit(mockText, mockTarget, mockLanguage)
+      expect(wrapper.instance().translateWords).toHaveBeenCalledWith(expected, mockLanguage)
     })
   })
 
