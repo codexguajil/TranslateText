@@ -76,9 +76,14 @@ describe('Form', () => {
       <Form {...props} />
       )
 
+      wrapper.setState({text: '', language: 'french'})
       let mockEvent = { preventDefault: jest.fn()}
       wrapper.instance().handleSubmit(mockEvent)
-      expect(wrapper.instance().props.handleError).toHaveBeenCalled()
+      expect(wrapper.instance().props.handleError).toHaveBeenCalledWith('type something to translate')
+  })
+
+  it('should return an error if a language hasnt been selected', () => {
+
   })
 
   it('should have props', () => {
