@@ -135,7 +135,7 @@ export default class DropDown extends Component {
       </div>
         { open &&
           <ul className="dd-list">
-            { languages.map(item => (<li key={item.id} className="dd-item" onClick={() => this.handleClick(item.id, item.language)}>{item.language}</li>))}
+            { languages.map(item => (<li key={item.id} id={item.id} className="dd-item" onClick={() => this.handleClick(item.id, item.language)}>{item.language}</li>))}
           </ul>
         }
       </div>
